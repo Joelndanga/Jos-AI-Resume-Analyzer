@@ -124,7 +124,7 @@ class ResumeAnalyzer:
         if experience_years < 2:
             suggestions.append({
                 "icon": "fa-briefcase",
-                "text": "Highlight any internships, projects, or relevant coursework"
+                "text": "Highlight any professional internships, projects, or relevant coursework"
             })
             
         if not suggestions:

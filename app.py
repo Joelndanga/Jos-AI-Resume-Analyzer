@@ -1451,7 +1451,7 @@ class ResumeApp:
         
         # Hero Section
         hero_section(
-            "Smart Resume AI",
+            "Jos Resume AI",
             "Transform your career with AI-powered resume analysis and building. Get personalized insights and create professional resumes that stand out."
         )
         
@@ -1466,7 +1466,7 @@ class ResumeApp:
         
         feature_card(
             "fas fa-magic",
-            "Smart Resume Builder",
+            "Jos Resume Builder",
             "Create professional resumes with our intelligent builder that suggests optimal content and formatting."
         )
         
@@ -1496,7 +1496,7 @@ class ResumeApp:
         # Admin login/logout in sidebar
         with st.sidebar:
             st_lottie(self.load_lottie_url("https://assets5.lottiefiles.com/packages/lf20_xyadoh9h.json"), height=200, key="sidebar_animation")
-            st.title("Smart Resume AI")
+            st.title("Jos Resume AI")
             st.markdown("---")
             
             # Navigation buttons
