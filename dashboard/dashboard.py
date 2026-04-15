@@ -242,7 +242,7 @@ class DashboardManager:
 
     def render_admin_panel(self):
         """Render admin panel with data management tools"""
-        st.sidebar.markdown("### 👋 Welcome Admin!")
+        st.sidebar.markdown("### Welcome Admin!")
         st.sidebar.markdown("---")
         
         if st.sidebar.button("🚪 Logout"):

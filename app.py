@@ -1,11 +1,11 @@
 """
-Smart Resume AI - Main Application
+Jos Resume AI - Main Application
 """
 import streamlit as st
 
 # Set page config at the very beginning
 st.set_page_config(
-    page_title="Smart Resume AI",
+    page_title="Jos Resume AI",
     page_icon="🚀",
     layout="wide"
 )
