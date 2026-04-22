@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set "VIRTUAL_ENV=C:\Users\olitc\OneDrive - CISTEL CONSULTING\Desktop\Project Iug\Smart-AI-Resume-Analyzer-main\AI-Resume-Analyzer\venv"
+set "VIRTUAL_ENV=C:\Users\olitc\OneDrive - CISTEL CONSULTING\Desktop\Project Iug\Jos-AI-Resume-Analyzer\venv"
 
 if not defined PROMPT set PROMPT=$P$G
 
