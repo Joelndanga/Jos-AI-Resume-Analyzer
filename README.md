@@ -1,6 +1,6 @@
 <div align="center">
 
-#  ** Jos AI Resume Analyzer **  
+#  Jos AI Resume Analyzer 
 <!--<img src="https://github.com/user-attachments/assets/8a37c282-efa0-45af-8f37-8e564a62ecd2" width="35">-->
 **Your Intelligent Career Partner**  
 <img src="https://github.com/user-attachments/assets/76906dbc-343d-4267-ace5-048d428fff42" width="20px"> Jos AI Resume Analyzer is your all-in-one tool to analyze, optimize, and craft resumes that stand out, helping you land your dream job.  
@@ -10,7 +10,7 @@
   <p>
     <small align="justify">
       Built with <img src="https://github.com/user-attachments/assets/00314b63-96bb-4e9a-92f6-4ead67e0fb7d" width="25" height="25"> by 
-      <a href="https://www.linkedin.com/in/tabarakmukhtar">Tabarak Mukhtar</a>
+      <a href="https://www.linkedin.com/in/joel-emmanuel-ndaga-houdjeu-hongueo-0a063a212/">Joel Ndaga</a>
      </small>
   </p><br/><br/>
 </div>  
