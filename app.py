@@ -538,7 +538,7 @@ class ResumeApp:
         # Template selection
         template_options = ["Modern", "Professional", "Minimal", "Creative"]
         selected_template = st.selectbox("Select Resume Template", template_options)
-        st.success(f"🎨 Currently using: {selected_template} Template")
+        st.success(f"Currently using: {selected_template} Template")
 
         # Personal Information
         st.subheader("Personal Information")
@@ -568,7 +568,7 @@ class ResumeApp:
             # Input fields with existing values
             location = st.text_input("Location", value=existing_location)
             linkedin = st.text_input("LinkedIn URL", value=existing_linkedin)
-            portfolio = st.text_input("Portfolio Website", value=existing_portfolio)
+            portfolio = st.text_input("Portfolio/Website", value=existing_portfolio)
 
         # Update personal info in session state
         st.session_state.form_data['personal_info'] = {
@@ -700,8 +700,7 @@ class ResumeApp:
                 'degree': '',
                 'field': '',
                 'graduation_date': '',
-                'gpa': '',
-                'achievements': []
+                'gpa': ''
             })
         
         for idx, edu in enumerate(st.session_state.form_data['education']):
@@ -716,15 +715,6 @@ class ResumeApp:
                                                          value=edu.get('graduation_date', ''))
                 
                 edu['gpa'] = st.text_input("GPA (optional)", key=f"gpa_{idx}", value=edu.get('gpa', ''))
-                
-                # Educational Achievements
-                st.markdown("##### Achievements & Activities")
-                edu_achv_text = st.text_area("Enter achievements (one per line)", 
-                                           key=f"edu_achv_{idx}",
-                                           value='\n'.join(edu.get('achievements', [])),
-                                           height=100,
-                                           help="List academic achievements, relevant coursework, or activities")
-                edu['achievements'] = [a.strip() for a in edu_achv_text.split('\n') if a.strip()]
                 
                 if st.button("Remove Education", key=f"remove_edu_{idx}"):
                     st.session_state.form_data['education'].pop(idx)
@@ -1006,7 +996,7 @@ class ResumeApp:
         # Hero Section
         st.markdown("""
             <div class="hero-section">
-                <h1 class="hero-title">About Smart Resume AI</h1>
+                <h1 class="hero-title">About Jos Resume AI</h1>
                 <p class="hero-subtitle">A powerful AI-driven platform for optimizing your resume</p>
             </div>
         """, unsafe_allow_html=True)
@@ -1015,25 +1005,25 @@ class ResumeApp:
         st.markdown(f"""
             <div class="profile-section">
                 <img src="{image_base64 if image_base64 else 'https://github.com/tabarakmukhtar.png'}" 
-                     alt="Tabarak Mukhtar" 
+                     alt="Joel Ndaga" 
                      class="profile-image"
                      onerror="this.onerror=null; this.src='https://github.com/tabarakmukhtar.png';">
-                <h2 class="profile-name">Tabarak Mukhtar </h2>
-                <p class="profile-title">Full Stack Developer & DevOps Enthusiast</p>
+                <h2 class="profile-name">Joel Ndaga</h2>
+                <p class="profile-title">Junior Developer & Graphic Designer</p>
                 <div class="social-links">
-                    <a href="https://github.com/tabarakmukhtar" class="social-link" target="_blank">
+                    <a href="https://github.com/Joelndanga" class="social-link" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/tabarakmukhtar/" class="social-link" target="_blank">
+                    <a href="https://www.linkedin.com/in/joel-emmanuel-ndaga-houdjeu-hongueo-0a063a212/" class="social-link" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:tabarakmukhtar159@gmail.com" class="social-link" target="_blank">
+                    <a href="mailto:joelndanga46@gmail.com" class="social-link" target="_blank">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
                 <p class="bio-text">
-                    Hello! I'm a passionate Software Engineer with expertise Full stack Development & DevOps. 
-                    I created Smart Resume AI to revolutionize how job seekers approach their career journey. 
+                    Hello! I'm a passionate Software Engineer with aim in innovating software and life encounters. 
+                    I created Jos Resume AI to revolutionize how job seekers approach their career journey. 
                     With my background in both software development and AI, I've designed this platform to 
                     provide intelligent, data-driven insights for resume optimization.
                 </p>
@@ -1046,7 +1036,7 @@ class ResumeApp:
                 <i class="fas fa-lightbulb vision-icon"></i>
                 <h2 class="vision-title">Our Vision</h2>
                 <p class="vision-text">
-                    "Smart Resume AI represents my vision of democratizing career advancement through technology. 
+                    "Jos Resume AI represents a vision of democratizing career advancement through technology. 
                     By combining cutting-edge AI with intuitive design, this platform empowers job seekers at 
                     every career stage to showcase their true potential and stand out in today's competitive job market."
                 </p>
@@ -1121,7 +1111,7 @@ class ResumeApp:
         st.markdown(
             self.render_empty_state(
             "fas fa-cloud-upload-alt",
-            "Upload your resume to get started with AI-powered analysis"
+            "Upload your resume to get started with Jos AI-powered analysis"
             ),
             unsafe_allow_html=True
         )
